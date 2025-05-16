@@ -186,7 +186,7 @@ app.post("/orders", async (req, res) => {
   res.status(204).send();
 });
 
-// curl -i -s -X GET -H "Accept-Type:application/json" http://localhost:3000/orders
+// curl -i -s -X GET -H "Accept:application/json" http://localhost:3000/orders
 app.get("/orders", async (_, res) => {
   res.json({
     orders: orders.filter(

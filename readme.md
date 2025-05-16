@@ -21,5 +21,5 @@ docker run -d -p 6379:6379 redis
 
 5. **Check the Orders**: After sending the request, you can call the `/orders` endpoint to see the processed orders:
    ```bash
-   curl -i -s -X GET -H "Accept-Type:application/json" http://localhost:3000/orders
+   curl -i -s -X GET -H "Accept:application/json" http://localhost:3000/orders
    ```
